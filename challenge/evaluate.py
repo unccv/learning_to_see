@@ -8,6 +8,7 @@
 
 import numpy as np
 import pickle
+import time
 
 def evaluate(student_file = 'sample_student', data_file = 'data/training_data.p'):
   '''
@@ -57,4 +58,32 @@ def evaluate(student_file = 'sample_student', data_file = 'data/training_data.p'
   return accuracy, confusion_matrix
 
 
-                
+def calculate_score(accuracy):
+    score = 0
+    if accuracy >= 0.8:
+       score = 10
+    elif accuracy >= 0.7:
+       score = 9
+    elif accuracy >= 0.6:
+       score = 8
+    elif accuracy >= 0.5:
+       score = 7
+    elif accuracy >= 0.4:
+       score = 6
+    elif accuracy >= 0.35:
+       score = 5
+    elif accuracy >= 0:
+       score = 4
+    return score
+
+
+if __name__ == '__main__':
+    program_start = time.time()
+    accuracy, _ = evaluate()
+    score = calculate_score(accuracy)
+    program_end = time.time()
+    total_time = round(program_end - program_start,2)
+    
+    print("Execution time (seconds) = ", total_time)
+    print("Score = ", score)
+    print()
