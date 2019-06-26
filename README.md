@@ -2,13 +2,16 @@
 
 ![](challenge/graphics/finger_counting_demo.gif)
 
-
 ## About 
 This repository supports the YouTube series [Learning to See](https://www.youtube.com/watch?v=i8D90DkCLhI&list=PLiaHhY2iBX9ihLasvE8BKnS2Xg8AhY6iV). We'll take a bottom-up appraoch to machine learning for computer vision, and tackle one problem: counting the number of fingers in an image from a [Leap Motion](https://www.leapmotion.com/) Infared Camera.
 
-
-### Note on Launching the Jupyter Notebooks
-To properly view the images and animations, please launch your jupyter notebook from the root directory of this repository. 
+## Lectures
+| Order |   Notebook/Slides  | Topics | Required Viewing Before | Additional Reading | Notes |
+| ----- | ------------------ | ------ | ----------------------- | ------------------ | ----- |
+| 1 | [Rules](https://github.com/unccv/learning_to_see/blob/master/notebooks/1-Rules.ipynb) | Let's try a rules based approach to real CV problem | [LTS part 1](https://www.youtube.com/watch?v=i8D90DkCLhI&list=PLiaHhY2iBX9ihLasvE8BKnS2Xg8AhY6iV) | - | [Intro to Programming Challenge](https://github.com/unccv/learning_to_see/blob/master/challenge/challenge_instructions.ipynb) |
+| 2 | [Machine Learning](https://github.com/unccv/learning_to_see/blob/master/notebooks/2-Machine%20Learning.ipynb) | Can we learn a better way from data? | [LTS part 2, 3](https://www.youtube.com/watch?v=2ZhQkD1QKFw&index=2&list=PLiaHhY2iBX9ihLasvE8BKnS2Xg8AhY6iV) | - | - |
+| 3 | [Generalization](https://github.com/unccv/learning_to_see/blob/master/notebooks/3-Generalization%20and%20Legos.ipynb) | How do we know if our models are actually working? | [LTS part 4, 5](https://www.youtube.com/watch?v=sarVw-iVWgc&index=4&list=PLiaHhY2iBX9ihLasvE8BKnS2Xg8AhY6iV) | [Surely You're Joking Mr. Feynman](https://www.amazon.com/Surely-Youre-Joking-Mr-Feynman-ebook/dp/B003V1WXKU/ref=sr_1_1?ie=UTF8&qid=1530909477&sr=8-1&keywords=surely+you%27re+joking+mr.+feynman) | - |
+| 4 | [Machine Learning](https://github.com/unccv/learning_to_see/blob/master/notebooks/2-Machine%20Learning.ipynb) | Can we learn a better way from data? | [LTS part 2, 3](https://www.youtube.com/watch?v=2ZhQkD1QKFw&index=2&list=PLiaHhY2iBX9ihLasvE8BKnS2Xg8AhY6iV) | - | - |
 
 ## Setup 
 
@@ -52,6 +55,11 @@ jt -t grade3 -cellw=90% -fs=14 -tfs=14 -ofs=14 -dfs=14
 ~~~
 
 ## Notes  
+
+### Launching the Jupyter Notebooks
+To properly view the images and animations, please launch your jupyter notebook from the root directory of this repository. 
+
+### Graphviz on Windows
 Windows users may need to install GraphViz separetely if you are getting [GraphViz's executables not found](https://stackoverflow.com/questions/18438997/why-is-pydot-unable-to-find-graphvizs-executables-in-windows-8) exception in notebook 4.
 1. [Download GraphViz MSI](https://graphviz.gitlab.io/_pages/Download/Download_windows.html)
 2. Add "C:\Program Files (x86)\Graphviz2.34\bin\" to your PATH variable.
